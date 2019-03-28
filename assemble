@@ -10,7 +10,7 @@ fi
 
 echo "---> Installing java"
 # Install required RPMs and ensure that the packages were installed
-RUN yum install -y yum-utils unzip tar rsync java-1.8.0-openjdk-devel rh-maven35 \
+yum install -y yum-utils unzip tar rsync java-1.8.0-openjdk-devel rh-maven35 \
     && yum clean all && rm -rf /var/cache/yum \
     && rpm -q yum-utils unzip tar rsync java-1.8.0-openjdk-devel rh-maven35
 
